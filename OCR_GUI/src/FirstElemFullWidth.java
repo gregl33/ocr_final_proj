@@ -1293,7 +1293,7 @@ public void process2(hashMap hm,String fileName) {
 	 	 }
 	 	
 	 	 
-	 		List<Text_Rect> text_rect_list = new ArrayList<Text_Rect>();
+//	 		List<Text_Rect> text_rect_list = new ArrayList<Text_Rect>();
 	 		
 
 	 	
@@ -2421,39 +2421,7 @@ public void process4(hashMap hm,String fileName) {
     Imgproc.dilate(vertical, vertical, verticalStructure);
     // Show extracted vertical lines
     showWaitDestroy("vertical", vertical);
-////    
-    
-//     Inverse vertical image
-////    Core.bitwise_not(horizontal, horizontal);
-//    showWaitDestroy("vertical_bit" , horizontal);
-//    // Extract edges and smooth image according to the logic
-//    // 1. extract edges
-//    // 2. dilate(edges)
-//    // 3. src.copyTo(smooth)
-//    // 4. blur smooth img
-//    // 5. smooth.copyTo(src, edges)
-//    // Step 1
-//    Mat edges = new Mat();
-//    Imgproc.adaptiveThreshold(horizontal, edges, 255, Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY, 3, -2);
-//    showWaitDestroy("edges", edges);
-//    // Step 2
-//    Mat kernel_2 = Mat.ones(2, 2, CvType.CV_8UC1);
-//    Imgproc.dilate(edges, edges, kernel_2);
-//    showWaitDestroy("dilate", edges);
-//    // Step 3
-//    Mat smooth = new Mat();
-//    vertical.copyTo(smooth);
-//    // Step 4
-//    Imgproc.blur(smooth, smooth, new Size(2, 2));
-//    // Step 5
-//    smooth.copyTo(horizontal, edges);
-//    // Show final result
-//    showWaitDestroy("smooth - final", horizontal);
-////    System.exit(0);
-//}
-//    lines_removed = cv.subtract(gray, vertical + horizontal)
 
-    
     		
     Mat testing = new Mat();
 

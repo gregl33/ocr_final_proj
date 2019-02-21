@@ -36,6 +36,7 @@ import javax.swing.event.ChangeListener;
 import java.awt.Cursor;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.LineBorder;
+
 public class main {
 
 	private JFrame frame,frame2;
