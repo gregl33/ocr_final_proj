@@ -2398,6 +2398,8 @@ public void process4(hashMap hm,String fileName) {
     	showWaitDestroy("bitwise_not_2" , bw_2);
 	}
     
+    
+    //REMOVE LINES - https://docs.opencv.org/3.4.3/dd/dd7/tutorial_morph_lines_detection.html
     // Create the images that will use to extract the horizontal and vertical lines
     Mat horizontal = bw_2.clone();
     Mat vertical = bw_2.clone();
@@ -2641,7 +2643,7 @@ public void process4(hashMap hm,String fileName) {
 		 
 		 
 		 
-		 
+		 //https://gaborvecsei.wordpress.com/2016/08/29/straighten-image-with-opencv/
 		 
 		 double rotationAngle = detectRotationAngle(connected);
 			
